@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% for(var i=0; i< location.length; i++) {%>
+
+      <%= location[i].name %>
+    <% } %>
+
+    <form action="/" method="POST">
+      <input name="city" />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
